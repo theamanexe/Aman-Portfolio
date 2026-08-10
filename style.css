@@ -1781,99 +1781,215 @@ body {
 
 }
 
-/* =====================================================
-   MOBILE
-===================================================== */
+/* =========================================
+   MOBILE / PHONE VERSION
+   ========================================= */
 
-@media (max-width: 650px) {
+@media (max-width: 768px) {
 
-    .ventures-section {
-        padding:
-            80px 18px;
+    /* ---------- HEADER ---------- */
+
+    .navbar {
+        padding: 15px 20px;
     }
 
-    .ventures-header {
-        margin-bottom: 40px;
+    .logo {
+        font-size: 22px;
     }
 
-    .ventures-header h2 {
-        font-size: 38px;
+    /* Hide desktop navigation on phone */
+    .nav-links {
+        display: none;
     }
 
-    .ventures-header p {
-        font-size: 15px;
-    }
 
-    .venture-card {
-        border-radius: 18px;
-    }
+    /* ---------- HERO SECTION ---------- */
 
-    .venture-content {
-        padding:
-            40px 25px 190px;
-    }
+    .hero {
+        min-height: auto;
+        height: auto;
 
-    .venture-content h3 {
-        font-size: 36px;
-    }
-
-    .venture-description {
-        font-size: 15px;
-    }
-
-    .venture-features {
-        grid-template-columns:
-            repeat(2, 1fr);
-
-        gap: 25px 10px;
-    }
-
-    .venture-visual {
-        min-height: 390px;
-    }
-
-    .mystery-object {
-        width: 220px;
-        height: 195px;
-    }
-
-    .question-mark {
-        font-size: 85px;
-    }
-
-    .orbit {
-        width: 330px;
-        height: 150px;
-    }
-
-    .rocket {
-        top: 65px;
-        left: 20%;
-    }
-
-    .cube {
-        top: 75px;
-        right: 18%;
-    }
-
-    .venture-connect {
-        left: 15px;
-        right: 15px;
-        bottom: 15px;
-
-        padding: 15px;
-
+        display: flex;
         flex-direction: column;
 
-        align-items: stretch;
+        padding: 70px 20px 50px;
+
+        text-align: center;
     }
 
-    .connect-button {
+
+    /* ---------- HERO CONTENT ---------- */
+
+    .hero-content {
         width: 100%;
+        max-width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 56px;
+        line-height: 1.05;
+
+        margin: 10px 0 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 24px;
+        line-height: 1.3;
+
+        margin-bottom: 25px;
+    }
+
+    .hero-content .description {
+        font-size: 17px;
+        line-height: 1.7;
+
+        max-width: 500px;
+
+        margin: 0 auto 30px;
+    }
+
+
+    /* ---------- BUTTONS ---------- */
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 15px;
+
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 260px;
+
+        box-sizing: border-box;
+
+        text-align: center;
+    }
+
+
+    /* ---------- SOCIAL LINKS ---------- */
+
+    .social-links {
+        display: flex;
 
         justify-content: center;
+        align-items: center;
+
+        gap: 25px;
+
+        margin-top: 30px;
     }
 
+    .social-links a {
+        width: 24px;
+        height: 24px;
+    }
+
+
+    /* ---------- PROFILE IMAGE ---------- */
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+
+        min-height: 0;
+
+        margin-top: 45px;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+    }
+
+
+    /* Purple circle */
+
+    .glow-circle {
+        width: 290px;
+        height: 290px;
+
+        position: absolute;
+
+        border-radius: 50%;
+    }
+
+
+    /* Profile picture */
+
+    .hero-image img {
+        width: 290px;
+        max-width: 85%;
+
+        height: auto;
+
+        position: relative;
+
+        z-index: 2;
+
+        object-fit: contain;
+    }
+}
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 480px) {
+
+    .navbar {
+        padding: 14px 18px;
+    }
+
+    .hero {
+        padding: 55px 18px 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+    }
+
+    .hero-content h2 {
+        font-size: 21px;
+    }
+
+    .hero-content .description {
+        font-size: 16px;
+        line-height: 1.65;
+    }
+
+    .hero-buttons .btn {
+        width: 255px;
+    }
+
+    .social-links {
+        margin-top: 28px;
+        gap: 22px;
+    }
+
+    .hero-image {
+        margin-top: 40px;
+    }
+
+    .glow-circle {
+        width: 270px;
+        height: 270px;
+    }
+
+    .hero-image img {
+        width: 270px;
+    }
 }
 
 /* =====================================================
